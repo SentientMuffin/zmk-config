@@ -50,7 +50,7 @@
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
    &kp ESC   &kp EXCL &kp AT    &kp PLUS  &kp CARET &kp AMPS     &kp BSLH  &kp DLLR  &kp DQT   &kp COLON &none   &none
-   &bt LCTRL &kp FSLH &kp MINUS &kp COMMA &kp DOT   &kp ASTRK    &kp HASH  &kp EQUAL &kp SQT   &kp PIPE  &kp RET &none
+   &kp LCTRL &kp FSLH &kp MINUS &kp COMMA &kp DOT   &kp ASTRK    &kp HASH  &kp EQUAL &kp SQT   &kp PIPE  &kp RET &none
    &kp LSHFT &kp LALT &kp UNDER &kp LT    &kp GT    &kp TILDE    &kp GRAVE &kp PRCNT &kp QMARK &kp SEMI  &none   &none
                                 &kp LGUI  &mo 3     &kp ESC      &none     &mo 1     &none
                         >;
