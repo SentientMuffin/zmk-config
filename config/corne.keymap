@@ -14,6 +14,7 @@
 #define NUMBRKT 2
 #define MISC 3
 #define CONTROL 4
+#define LEFTNAV 5
 
 / {
         behaviors {
@@ -36,9 +37,9 @@
 // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
 //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
                         bindings = <
-   &kp EP_ON         &kp Q       &kp W      &kp E       &kp R      &kp T        &kp Y    &kp U      &kp I       &kp SEMI   &kp DOT     &kp BSPC
-   &kp LCTRL         &hm LCTRL A &hm LALT S &hm LSHFT D &hm LGUI F &kp G        &kp H    &hm RGUI N &hm RSHFT K &hm RALT O &hm RCTRL L &kp RET
-   &ext_power EP_OFF &kp Z       &kp X      &kp C       &kp V      &kp B        &kp J    &kp M      &kp P       &kp LA(N)  &kp CAPS    &kp ESC
+   &to 5     &kp Q       &kp W      &kp E       &kp R      &kp T        &kp Y    &kp U      &kp I       &kp SEMI   &kp DOT     &kp BSPC
+   &kp LCTRL &hm LCTRL A &hm LALT S &hm LSHFT D &hm LGUI F &kp G        &kp H    &hm RGUI N &hm RSHFT K &hm RALT O &hm RCTRL L &kp RET
+   &kp LSHFT &kp Z       &kp X      &kp C       &kp V      &kp B        &kp J    &kp M      &kp P       &kp LA(N)  &kp CAPS    &kp ESC
                                     &kp LGUI    &mo 2      &kp SPACE    &kp BSPC &mo 1      &kp RALT
                         >;
                 };
@@ -96,6 +97,20 @@
    &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &kp LEFT &kp DOWN &kp UP &kp RIGHT &none &none
    &none      &none        &none        &none        &none        &none          &none    &none    &none  &none     &none &none
                                         &none        &to 0        &none          &none    &to 0    &none
+                        >;
+                };
+
+                leftnav_layer {
+// -----------------------------------------------------------------------------------------
+// |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
+// | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
+// | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
+//                    | GUI |     | SPC |   | ENT |     | ALT |
+                        bindings = <
+   &kp ESC &none &none    &kp UP   &none     &none   &none    &none    &none  &none     &none &none
+   &none   &none &kp LEFT &kp DOWN &kp RIGHT &kp RET &kp LEFT &kp DOWN &kp UP &kp RIGHT &none &none
+   &none   &none &none    &none    &none     &none   &none    &none    &none  &none     &none &none
+                          &none    &to 0     &none   &none    &to 0    &none
                         >;
                 };
         };
