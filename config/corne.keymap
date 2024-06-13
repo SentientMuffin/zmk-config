@@ -37,10 +37,10 @@
 // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
 //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
                         bindings = <
-   &to 5     &kp Q       &kp W      &kp E       &kp R      &kp T        &kp Y    &kp U      &kp I       &kp SEMI   &kp DOT     &kp BSPC
-   &kp LCTRL &hm LCTRL A &hm LALT S &hm LSHFT D &hm LGUI F &kp G        &kp H    &hm RGUI N &hm RSHFT K &hm RALT O &hm RCTRL L &kp RET
-   &ext_power EP_ON &kp Z       &kp X      &kp C       &kp V      &kp B        &kp J    &kp M      &kp P       &kp LA(N)  &kp CAPS    &kp ESC
-                                    &kp LGUI    &mo 2      &kp SPACE    &kp BSPC &mo 1      &kp RALT
+   &to 5   &kp Q       &kp W      &kp E       &kp R      &kp T        &kp Y    &kp U      &kp I       &kp TAB    &kp DOT     &kp BSPC
+   &kp ESC &hm LCTRL A &hm LALT S &hm LSHFT D &hm LGUI F &kp G        &kp H    &hm RGUI N &hm RSHFT K &hm RALT O &hm RCTRL L &kp RET
+   &none   &kp Z       &kp X      &kp C       &kp V      &kp B        &kp J    &kp M      &kp P       &kp LA(N)  &kp CAPS    &kp ESC
+                                    &kp LSHFT   &mo 2      &kp SPACE    &kp BSPC &mo 1      &kp RSHFT
                         >;
                 };
                 
@@ -54,7 +54,7 @@
    &kp ESC   &kp EXCL &kp AT    &kp PLUS  &kp CARET &kp AMPS     &kp BSLH  &kp DLLR  &kp DQT   &kp COLON &none   &none
    &kp LCTRL &kp FSLH &kp MINUS &kp COMMA &kp DOT   &kp ASTRK    &kp HASH  &kp EQUAL &kp SQT   &kp PIPE  &kp RET &none
    &kp LSHFT &kp LALT &kp UNDER &kp LT    &kp GT    &kp TILDE    &kp GRAVE &kp PRCNT &kp QMARK &kp SEMI  &none   &none
-                                &kp LGUI  &mo 3     &kp ESC      &none     &mo 1     &none
+                                &kp LGUI  &mo 3     &kp SPACE    &none     &mo 1     &none
                         >;
                 };
 
@@ -65,10 +65,11 @@
 // | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
-   &kp ESC   &kp LSHFT        &kp N1 &kp N2 &kp N3 &kp DOT   &kp LEFT &kp DOWN &kp UP   &kp RIGHT &kp TAB   &kp BSPC
-   &kp LCTRL &kp LS(LGUI)     &kp N4 &kp N5 &kp N6 &kp N0    &kp LBRC &kp LPAR &kp RPAR &kp RBRC  &kp RET   &kp RET
-   &kp LALT  &kp LC(LA(LGUI)) &kp N7 &kp N8 &kp N9 &none     &kp PLUS &kp LBKT &kp RBKT &kp COMMA &kp RSHFT &none
+   &kp ESC          &kp LSHFT &kp N1 &kp N2 &kp N3 &kp DOT   &kp LEFT &kp DOWN &kp UP   &kp RIGHT &kp TAB   &kp BSPC
+   &kp LS(LGUI)     &kp ESC   &kp N4 &kp N5 &kp N6 &kp N0    &kp LBRC &kp LPAR &kp RPAR &kp RBRC  &kp RET   &kp RET
+   &kp LC(LA(LGUI)) &kp TAB   &kp N7 &kp N8 &kp N9 &none     &kp PLUS &kp LBKT &kp RBKT &kp COMMA &kp RSHFT &none
                                      &none  &mo 2  &none     &kp TAB  &mo 3    &kp RALT
+         
                         >;
                 };
 
@@ -81,7 +82,7 @@
                         bindings = <
    &to 4 &kp F1 &kp F2  &kp F3  &kp F4  &none   &none      &none        &none        &none     &none   &none
    &none &kp F5 &kp F6  &kp F7  &kp F8  &none   &kp LEFT   &kp DOWN     &kp UP       &kp RIGHT &kp RET &none
-   &none &kp F9 &kp F10 &kp F11 &kp F12 &none   &kp K_MUTE &kp K_VOL_DN &kp K_VOL_UP &none     &none   &none
+   &none &kp F9 &kp F10 &kp F11 &kp F12 &none   &kp C_MUTE &kp C_VOL_DN &kp C_VOL_UP &none     &none   &none
                         &none   &mo 3   &none   &none      &mo 3        &none
                         >;
                 };
@@ -107,10 +108,10 @@
 // | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
-   &kp ESC &none &none    &kp UP   &none     &none   &none    &none    &none  &none     &none &none
-   &none   &none &kp LEFT &kp DOWN &kp RIGHT &kp RET &kp LEFT &kp DOWN &kp UP &kp RIGHT &none &none
-   &ext_power EP_ON   &none &none    &none    &none     &none   &none    &none    &none  &none     &none &none
-                          &none    &to 0     &none   &none    &to 0    &none
+   &kp ESC &none   &kp C_PREV &kp UP   &kp C_NEXT &kp C_VOL_UP &none    &none    &none  &none     &none &none
+   &none   &kp TAB &kp LEFT   &kp DOWN &kp RIGHT  &kp RET      &kp LEFT &kp DOWN &kp UP &kp RIGHT &none &none
+   &none   &none   &kp E      &none    &kp R      &kp C_VOL_DN &none    &none    &none  &none     &none &none
+                              &none    &to 0      &kp SPC      &none    &to 0    &none
                         >;
                 };
         };
