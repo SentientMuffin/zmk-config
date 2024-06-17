@@ -37,9 +37,9 @@
 // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
 //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
                         bindings = <
-   &to 5   &kp Q       &kp W      &kp E       &kp R      &kp T        &kp Y    &kp U      &kp I       &kp TAB    &kp DOT     &kp BSPC
-   &kp ESC &hm LCTRL A &hm LALT S &hm LSHFT D &hm LGUI F &kp G        &kp H    &hm RGUI N &hm RSHFT K &hm RALT O &hm RCTRL L &kp RET
-   &none   &kp Z       &kp X      &kp C       &kp V      &kp B        &kp J    &kp M      &kp P       &kp LA(N)  &kp CAPS    &kp ESC
+   &to 5     &kp Q       &kp W      &kp E       &kp R      &kp T        &kp Y    &kp U      &kp I       &kp TAB    &kp DOT     &kp BSPC
+   &kp LSHFT &hm LCTRL A &hm LALT S &hm LSHFT D &hm LGUI F &kp G        &kp H    &hm RGUI N &hm RSHFT K &hm RALT O &hm RCTRL L &kp RSHFT
+   &none     &kp Z       &kp X      &kp C       &kp V      &kp B        &kp J    &kp M      &kp P       &kp LA(N)  &kp CAPS    &kp ESC
                                     &kp LSHFT   &mo 2      &kp SPACE    &kp BSPC &mo 1      &kp RSHFT
                         >;
                 };
@@ -108,10 +108,10 @@
 // | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
-   &kp ESC &none   &kp C_PREV &kp UP   &kp C_NEXT &kp C_VOL_UP &none    &none    &none  &none     &none &none
-   &none   &kp TAB &kp LEFT   &kp DOWN &kp RIGHT  &kp RET      &kp LEFT &kp DOWN &kp UP &kp RIGHT &none &none
-   &none   &none   &kp E      &none    &kp R      &kp C_VOL_DN &none    &none    &none  &none     &none &none
-                              &none    &to 0      &kp SPC      &none    &to 0    &none
+   &kp ESC &kp Q   &kp C_AC_BACK &kp UP   &kp C_AC_FORWARD &kp C_VOL_UP &none    &none    &none  &none     &none &none
+   &none   &kp TAB &kp LEFT      &kp DOWN &kp RIGHT        &kp RET      &kp LEFT &kp DOWN &kp UP &kp RIGHT &none &none
+   &none   &none   &kp E         &none    &kp R            &kp C_VOL_DN &none    &none    &none  &none     &none &none
+                                 &none    &to 0            &kp SPC      &none    &to 0    &none
                         >;
                 };
         };
