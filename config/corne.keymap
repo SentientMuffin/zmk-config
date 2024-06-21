@@ -40,9 +40,9 @@
 //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
                         bindings = <
    &to 5     &kp Q       &kp W      &kp E       &kp R      &kp T        &kp Y    &kp U      &kp I       &kp TAB    &kp DOT     &kp BSPC
-   &kp LSHFT &hm LCTRL A &hm LALT S &hm LSHFT D &hm LGUI F &kp G        &kp H    &hm RGUI N &hm RSHFT K &hm RALT O &hm RCTRL L &kp RSHFT
+   &kp LSHFT &hm LCTRL A &hm LALT S &hm LSHFT D &hm LGUI F &kp G        &kp H    &hm RGUI N &hm RSHFT K &hm RALT O &hm RCTRL L &kp LCTRL
    &to 6     &kp Z       &kp X      &kp C       &kp V      &kp B        &kp J    &kp M      &kp P       &kp LA(N)  &kp CAPS    &kp ESC
-                                    &kp LSHFT   &mo 2      &kp SPACE    &kp BSPC &mo 1      &kp RSHFT
+                                    &kp LGUI    &mo 2      &kp SPACE    &kp BSPC &mo 1      &kp LGUI
                         >;
                 };
                 
