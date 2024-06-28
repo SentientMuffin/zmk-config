@@ -39,10 +39,10 @@
 // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
 //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
                         bindings = <
-   &to 5     &kp Q       &kp W      &kp E       &kp R      &kp T        &kp Y    &kp U      &kp I       &kp TAB    &kp DOT     &kp BSPC
-   &kp LSHFT &hm LCTRL A &hm LALT S &hm LSHFT D &hm LGUI F &kp G        &kp H    &hm RGUI N &hm RSHFT K &hm RALT O &hm RCTRL L &kp LCTRL
-   &to 6     &kp Z       &kp X      &kp C       &kp V      &kp B        &kp J    &kp M      &kp P       &kp LA(N)  &kp CAPS    &kp ESC
-                                    &kp LGUI    &mo 2      &kp SPACE    &kp BSPC &mo 1      &kp LGUI
+   &to 5     &kp Q       &kp W      &kp E       &kp R      &kp T        &kp Y     &kp U      &kp I       &kp TAB    &kp DOT     &kp BSPC
+   &kp LCTRL &hm LCTRL A &hm LALT S &hm LSHFT D &hm LGUI F &kp G        &kp H     &hm RGUI N &hm RSHFT K &hm RALT O &hm RCTRL L &kp LCTRL
+   &to 6     &kp Z       &kp X      &kp C       &kp V      &kp B        &kp J     &kp M      &kp P       &kp LA(N)  &kp CAPS    &kp ESC
+                                    &kp LGUI    &mo 2      &kp SPACE    &kp LSHFT &mo 1      &kp LGUI
                         >;
                 };
                 
@@ -70,7 +70,7 @@
    &kp ESC          &kp LSHFT &kp N1 &kp N2 &kp N3 &kp DOT   &kp LEFT &kp DOWN &kp UP   &kp RIGHT &kp TAB   &kp BSPC
    &kp LS(LGUI)     &kp ESC   &kp N4 &kp N5 &kp N6 &kp N0    &kp LBRC &kp LPAR &kp RPAR &kp RBRC  &kp RET   &kp RET
    &kp LC(LA(LGUI)) &kp TAB   &kp N7 &kp N8 &kp N9 &none     &kp PLUS &kp LBKT &kp RBKT &kp COMMA &kp RSHFT &none
-                                     &none  &mo 2  &none     &kp TAB  &mo 3    &kp RALT
+                                     &none  &none  &none     &kp BSPC &none    &kp RALT
          
                         >;
                 };
@@ -85,7 +85,7 @@
    &to 4 &kp F1 &kp F2  &kp F3  &kp F4  &none   &none      &none        &none        &none     &none   &none
    &none &kp F5 &kp F6  &kp F7  &kp F8  &none   &kp LEFT   &kp DOWN     &kp UP       &kp RIGHT &kp RET &none
    &none &kp F9 &kp F10 &kp F11 &kp F12 &none   &kp C_MUTE &kp C_VOL_DN &kp C_VOL_UP &none     &none   &none
-                        &none   &mo 3   &none   &none      &mo 3        &none
+                        &none   &none   &none   &none      &none        &none
                         >;
                 };
 
@@ -141,7 +141,7 @@
    &kp ESC &kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp T &kp Y &kp U &kp I &none &none
    &kp TAB &kp N1 &kp N2 &kp N3 &kp N4 &kp N5 &kp G &kp H &kp N &kp K &kp O &kp L
    &none   &kp N6 &kp N7 &kp N8 &kp N9 &kp N0 &kp B &kp J &kp M &kp P &none &none
-                           &none &kp RET &kp SPC &none &none &none
+                         &none  &none &kp SPC &none &none &none
                         >;
                 };
         };
