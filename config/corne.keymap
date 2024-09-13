@@ -41,7 +41,7 @@
                         bindings = <
    &to 5     &kp Q       &kp W      &kp E       &kp R      &kp T        &kp Y     &kp U      &kp I       &kp BSPC   &kp DOT     &kp BSPC
    &kp LCTRL &hm LCTRL A &hm LALT S &hm LSHFT D &hm LGUI F &kp G        &kp H     &hm RGUI N &hm RSHFT K &hm RALT O &hm RCTRL L &kp LA(N)
-   &to 6     &kp Z       &kp X      &kp C       &kp V      &kp B        &kp J     &kp M      &kp P       &kp SEMI  &kp CAPS    &kp ESC
+   &to 6     &kp Z       &kp X      &kp C       &kp V      &kp B        &kp J     &kp M      &kp P       &kp SEMI   &kp CAPS    &kp ESC
                                     &kp LGUI    &mo 2      &kp SPACE    &kp LSHFT &mo 1      &kp LGUI
                         >;
                 };
@@ -76,8 +76,8 @@
    //                                     &none    &none    &none     &kp TAB  &mo 3    &kp RALT
                         bindings = <
    &kp ESC          &kp LSHFT &kp N1 &kp N2 &kp N3 &kp COMMA     &kp LEFT &kp DOWN &kp UP   &kp RIGHT &none   &none
-   &kp LS(LGUI)     &kp N0    &kp N4 &kp N5 &kp N5 &kp DOT       &kp LT   &kp LPAR &kp LBRC &kp LBRKT &kp RET &kp ESC
-   &kp LC(LA(LGUI)) &kp PLUS  &kp N7 &kp N8 &kp N9 &kp MINUS     &kp GT   &kp RPAR &kp RBRC &kp RBRKT &none   &none
+   &kp LS(LGUI)     &kp N0    &kp N4 &kp N5 &kp N5 &kp DOT       &kp LT   &kp LPAR &kp LBRC &kp LBKT &kp RET &kp ESC
+   &kp LC(LA(LGUI)) &kp PLUS  &kp N7 &kp N8 &kp N9 &kp MINUS     &kp GT   &kp RPAR &kp RBRC &kp RBKT &none   &none
                                      &none  &none  &none         &kp TAB  &mo 3    &kp RALT
                         >;
                 };
