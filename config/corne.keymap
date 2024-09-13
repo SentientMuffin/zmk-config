@@ -75,9 +75,9 @@
    // &kp LC(LA(LGUI)) &kp TAB   &kp LBRC &kp LPAR &kp LBKT &none     &kp PLUS &kp RBKT &kp RPAR &kp RBRC  &none  &none
    //                                     &none    &none    &none     &kp TAB  &mo 3    &kp RALT
                         bindings = <
-   &kp ESC          &kp LSHFT &kp N1 &kp N2 &kp N3 &kp COMMA     &kp LEFT &kp DOWN &kp UP   &kp RIGHT &none   &none
-   &kp LS(LGUI)     &kp N0    &kp N4 &kp N5 &kp N6 &kp DOT       &kp LT   &kp LPAR &kp LBRC &kp LBKT &kp RET &kp ESC
-   &kp LC(LA(LGUI)) &kp PLUS  &kp N7 &kp N8 &kp N9 &kp MINUS     &kp GT   &kp RPAR &kp RBRC &kp RBKT &none   &none
+   &kp ESC          &kp LSHFT &kp N1 &kp N2 &kp N3 &kp COMMA     &kp LEFT &kp DOWN &kp UP   &kp RIGHT &kp BSPC &none
+   &kp LS(LGUI)     &kp N0    &kp N4 &kp N5 &kp N6 &kp DOT       &kp LT   &kp LPAR &kp LBRC &kp LBKT  &kp RET  &kp ESC
+   &kp LC(LA(LGUI)) &kp PLUS  &kp N7 &kp N8 &kp N9 &kp MINUS     &kp GT   &kp RPAR &kp RBRC &kp RBKT  &none    &none
                                      &none  &none  &none         &kp TAB  &mo 3    &kp RALT
                         >;
                 };
