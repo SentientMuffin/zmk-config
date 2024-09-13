@@ -58,7 +58,7 @@
    //                              &kp LGUI  &mo 3     &kp SPACE    &none     &none     &none
                         bindings = <
    &kp ESC   &kp EXCL  &kp AT    &kp PLUS  &kp CARET &none           &none    &kp DLLR  &kp EQUAL &kp COLON &none     &none
-   &kp LCTRL &kp FSLH  &kp AMPS  &kp COMMA &kp DOT   &kp ASTRK       &kp HASH &kp DQT   &kp SQT   &kp PIPE  &kp RET   &none
+   &kp LCTRL &kp FSLH  &kp AMPS  &kp COMMA &kp DOT   &kp ASTRK       &kp HASH &kp DQT   &kp SQT   &kp PIPE  &kp RET   &kp ESC
    &kp LSHFT &kp BSLH  &kp UNDER &kp MINUS &kp AMPS  &none           &none    &kp PRCNT &kp QMARK &kp GRAVE &kp TILDE &none
                                  &kp LGUI  &mo 3     &kp SPACE       &none    &none     &none
                         >;
