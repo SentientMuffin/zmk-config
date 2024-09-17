@@ -81,8 +81,6 @@
    //                                     &none    &none    &none     &kp TAB  &mo 3    &kp RALT
                         bindings = <
    &kp ESC          &kp LSHFT &kp N1 &kp N2 &kp N3 &kp COMMA     &kp LEFT &kp DOWN &kp UP   &kp RIGHT &kp BSPC &none
-   &kp LS(LGUI)     &kp N0    &kp N4 &kp N5 &kp N6 &kp DOT       &kp LT   &kp LPAR &kp LBRC &kp LBKT  &kp RET  &kp ESC
-   &kp LC(LA(LGUI)) &kp PLUS  &kp N7 &kp N8 &kp N9 &kp MINUS     &kp GT   &kp RPAR &kp RBRC &kp RBKT  &none    &none
    &kp LS(LGUI)     &kp N0    &kp N4 &kp N5 &kp N6 &kp DOT       &kp LBRC &kp LPAR &kp RPAR &kp RBRC  &kp RET  &kp ESC
    &kp LC(LA(LGUI)) &kp PLUS  &kp N7 &kp N8 &kp N9 &kp MINUS     &kp LT   &kp LBKT &kp RBKT &kp GT    &none    &none
                                      &none  &none  &none         &kp TAB  &mo 3    &kp RALT
@@ -107,5 +105,62 @@
                         &none    &none     &none         &none      &none        &none
                         >;
                 };
+
+                control_layer {
+                        display-name = "BT";
+// -----------------------------------------------------------------------------------------
+// |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
+// | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
+// | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
+//                    | GUI |     | SPC |   | ENT |     | ALT |
+                        bindings = <
+   &none      &none        &none        &none        &none        &none          &none    &none    &none  &none     &none &none
+   &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &kp LEFT &kp DOWN &kp UP &kp RIGHT &none &none
+   &none      &none        &none        &none        &none        &none          &none    &none    &none  &none     &none &none
+                                        &none        &to 0        &none          &none    &to 0    &none
+                        >;
+                };
+// 
+//                 leftnav_layer {
+// // -----------------------------------------------------------------------------------------
+// // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
+// // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
+// // | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
+// //                    | GUI |     | SPC |   | ENT |     | ALT |
+//                         bindings = <
+//    &kp ESC &kp Q   &kp C_AC_BACK &kp UP   &kp C_AC_FORWARD &kp C_VOL_UP &none    &none    &none  &none     &none &none
+//    &none   &kp TAB &kp LEFT      &kp DOWN &kp RIGHT        &kp RET      &kp LEFT &kp DOWN &kp UP &kp RIGHT &none &none
+//    &none   &none   &kp E         &none    &kp R            &kp C_VOL_DN &none    &none    &none  &none     &none &none
+//                                  &none    &to 0            &kp SPC      &none    &to 0    &none
+//                         >;
+//                 };
+// 
+//                 wasd_layer {
+// // -----------------------------------------------------------------------------------------
+// // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
+// // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
+// // | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
+// //                    | GUI |     | SPC |   | ENT |     | ALT |
+//                         bindings = <
+//    &kp ESC &kp TAB   &kp Q &kp W &kp E &kp R &kp T &kp Y &kp U &kp I &none &none
+//    &kp RET &kp LSHFT &kp A &kp S &kp D &kp F &kp G &kp H &kp N &kp K &kp O &kp L
+//    &to 0   &kp LCTRL &kp Z &kp X &kp C &kp V &kp B &kp J &kp M &kp P &none &none
+//                            &none &mo 7 &kp SPC      &none    &none    &none
+//                         >;
+//                 };
+// 
+//                 wasdaddon_layer {
+// // -----------------------------------------------------------------------------------------
+// // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
+// // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
+// // | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
+// //                    | GUI |     | SPC |   | ENT |     | ALT |
+//                         bindings = <
+//    &kp ESC &kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp T &kp Y &kp U &kp I &none &none
+//    &kp TAB &kp N1 &kp N2 &kp N3 &kp N4 &kp N5 &kp G &kp H &kp N &kp K &kp O &kp L
+//    &none   &kp N6 &kp N7 &kp N8 &kp N9 &kp N0 &kp B &kp J &kp M &kp P &none &none
+//                          &none  &none &kp SPC &none &none &none
+//                         >;
+//                 };
         };
 };
