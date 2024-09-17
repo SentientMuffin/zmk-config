@@ -61,9 +61,9 @@
    // &kp LSHFT &kp LALT &kp UNDER &kp LT    &kp GT    &kp TILDE    &kp GRAVE &kp PRCNT &kp QMARK &kp SEMI  &none   &none
    //                              &kp LGUI  &mo 3     &kp SPACE    &none     &none     &none
                         bindings = <
-   &kp ESC   &kp ESC   &kp AT    &kp PLUS  &kp CARET &none           &none    &kp DLLR  &kp EQUAL &kp COLON &none     &none
-   &kp LCTRL &kp FSLH  &kp EXCL  &kp COMMA &kp DOT   &kp ASTRK       &kp HASH &kp DQT   &kp SQT   &kp PIPE  &kp RET   &none
-   &kp LSHFT &kp BSLH  &kp UNDER &kp MINUS &kp AMPS  &none           &none    &kp PRCNT &kp QMARK &kp GRAVE &kp TILDE &none
+   &kp ESC   &kp TILDE &kp AT    &kp PLUS  &kp CARET &none           &none    &kp DLLR  &kp EQUAL &kp COLON &none   &none
+   &kp LCTRL &kp FSLH  &kp EXCL  &kp COMMA &kp DOT   &kp ASTRK       &kp HASH &kp DQT   &kp SQT   &kp PIPE  &kp RET &none
+   &kp LSHFT &kp BSLH  &kp UNDER &kp MINUS &kp AMPS  &none           &none    &kp PRCNT &kp QMARK &kp GRAVE &none   &none
                                  &kp LGUI  &mo 3     &kp SPACE       &none    &none     &none
                         >;
                 };
@@ -80,7 +80,7 @@
    // &kp LC(LA(LGUI)) &kp TAB   &kp LBRC &kp LPAR &kp LBKT &none     &kp PLUS &kp RBKT &kp RPAR &kp RBRC  &none  &none
    //                                     &none    &none    &none     &kp TAB  &mo 3    &kp RALT
                         bindings = <
-   &kp ESC          &kp LSHFT &kp N1 &kp N2 &kp N3 &kp COMMA     &kp LEFT &kp DOWN &kp UP   &kp RIGHT &kp BSPC &none
+   &kp ESC          &kp ESC   &kp N1 &kp N2 &kp N3 &kp COMMA     &kp LEFT &kp DOWN &kp UP   &kp RIGHT &kp BSPC &none
    &kp LS(LGUI)     &kp N0    &kp N4 &kp N5 &kp N6 &kp DOT       &kp LBRC &kp LPAR &kp RPAR &kp RBRC  &kp RET  &kp ESC
    &kp LC(LA(LGUI)) &kp PLUS  &kp N7 &kp N8 &kp N9 &kp MINUS     &kp LT   &kp LBKT &kp RBKT &kp GT    &none    &none
                                      &none  &none  &none         &kp TAB  &mo 3    &kp RALT
