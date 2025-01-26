@@ -55,7 +55,7 @@
             timeout-ms = <50>;
             key-positions = <13 2>;
             layers = <0>;
-            bindings = <&kp LCTRL W>;
+            bindings = <&kp LCTRL &kp W>;
           };
         };
         keymap {
