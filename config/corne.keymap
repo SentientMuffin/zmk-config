@@ -37,19 +37,19 @@
             timeout-ms = <50>;
             key-positions = <20 21>;
             layers = <0>;
-            bindings = <%kp BSPC>;
+            bindings = <&kp BSPC>;
           };
           combo_esc {
             timeout-ms = <50>;
             key-positions = <20 21 22>;
             layers = <0>;
-            bindings = <%kp RET>;
+            bindings = <&kp RET>;
           };
           combo_esc {
             timeout-ms = <50>;
             key-positions = <14 39>;
             layers = <0>;
-            bindings = <%kp ESC>;
+            bindings = <&kp ESC>;
           };
         };
         keymap {
