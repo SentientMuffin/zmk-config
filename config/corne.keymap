@@ -31,7 +31,7 @@
                   bindings = <&kp>, <&kp>;
                 };
         };
-        combos: {
+        combos {
           compatible = "zmk,combos";
           combo_esc {
             timeout-ms = <50>;
