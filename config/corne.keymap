@@ -35,21 +35,27 @@
           compatible = "zmk,combos";
           combo_backspace {
             timeout-ms = <50>;
-            key-positions = <20 21>;
+            key-positions = <19 20>;
             layers = <0>;
             bindings = <&kp BSPC>;
           };
           combo_enter {
             timeout-ms = <50>;
-            key-positions = <20 21 22>;
+            key-positions = <19 20 21>;
             layers = <0>;
             bindings = <&kp RET>;
           };
           combo_esc {
             timeout-ms = <50>;
-            key-positions = <14 39>;
+            key-positions = <13 38>;
             layers = <0>;
             bindings = <&kp ESC>;
+          };
+          combe_c_w {
+            timeout-ms = <50>;
+            key-positions = <13 2>;
+            layers = <0>;
+            bindings = <&kp LCTRL W>;
           };
         };
         keymap {
