@@ -55,7 +55,7 @@
             timeout-ms = <50>;
             key-positions = <13 2>;
             layers = <0>;
-            bindings = <&kp LCTRL &kp W>;
+            bindings = <&kp LC(W)>;
           };
         };
         keymap {
@@ -69,7 +69,7 @@
 // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
 //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
                         bindings = <
-   &none     &kp Q       &kp W      &kp E       &kp R      &kp T        &kp Y     &kp U      &kp I       &kp BSPC   &kp DOT     &kp BSPC
+   &none     &kp Q       &kp W      &kp E       &kp R      &kp T        &kp Y     &kp U      &kp I       &none   &kp DOT     &kp BSPC
    &kp LCTRL &hm LCTRL A &hm LALT S &hm LSHFT D &hm LGUI F &kp G        &kp H     &hm RGUI N &hm RSHFT K &kp O      &kp L       &kp LA(N)
    &none     &kp Z       &kp X      &kp C       &kp V      &kp B        &kp J     &kp M      &kp P       &kp SEMI   &kp CAPS    &kp ESC
                                     &kp LGUI    &mo 2      &kp SPACE    &kp LSHFT &mo 1      &key_repeat
@@ -89,7 +89,7 @@
    //                              &kp LGUI  &mo 3     &kp SPACE    &none     &none     &none
                         bindings = <
    &kp ESC   &kp TILDE &kp AT    &kp PLUS  &kp CARET &none           &none    &kp DLLR  &kp EQUAL &kp COLON &none   &none
-   &kp LCTRL &kp FSLH  &kp EXCL  &kp COMMA &kp DOT   &kp ASTRK       &kp HASH &kp DQT   &kp SQT   &kp PIPE  &kp RET &none
+   &kp LCTRL &kp FSLH  &kp EXCL  &kp COMMA &kp DOT   &kp ASTRK       &kp HASH &kp DQT   &kp SQT   &kp PIPE  &none &none
    &kp LSHFT &kp BSLH  &kp UNDER &kp MINUS &kp AMPS  &none           &none    &kp PRCNT &kp QMARK &kp GRAVE &none   &none
                                  &kp LGUI  &mo 3     &kp SPACE       &none    &none     &none
                         >;
@@ -108,7 +108,7 @@
    //                                     &none    &none    &none     &kp TAB  &mo 3    &kp RALT
                         bindings = <
    &kp ESC          &kp N0    &kp N1 &kp N2 &kp N3 &kp COMMA     &kp LEFT &kp DOWN &kp UP   &kp RIGHT &kp BSPC &none
-   &kp LS(LGUI)     &kp ESC   &kp N4 &kp N5 &kp N6 &kp DOT       &kp LBRC &kp LPAR &kp RPAR &kp RBRC  &kp RET  &kp ESC
+   &kp LS(LGUI)     &kp N0   &kp N4 &kp N5 &kp N6 &kp DOT       &kp LBRC &kp LPAR &kp RPAR &kp RBRC  &kp RET  &kp ESC
    &kp LC(LA(LGUI)) &kp PLUS  &kp N7 &kp N8 &kp N9 &kp MINUS     &kp LT   &kp LBKT &kp RBKT &kp GT    &none    &none
                                      &none  &none  &none         &kp TAB  &mo 3    &kp RALT
                         >;
