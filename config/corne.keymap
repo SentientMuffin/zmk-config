@@ -36,6 +36,12 @@
             tapping-term-ms = <200>;
             bindings = <&kp LSHFT>, <&sk LCTRL>;
           };
+          sesc: space_escape {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp SPACE>, <&kp ESC>;
+          };
         };
         combos {
           compatible = "zmk,combos";
@@ -50,12 +56,6 @@
             key-positions = <14 15>;
             layers = <0>;
             bindings = <&kp ESC>;
-          };
-          combo_ret {
-            timeout-ms = <50>;
-            key-positions = <19 20 21>;
-            layers = <0>;
-            bindings = <&kp RET>;
           };
         };
         keymap {
@@ -72,7 +72,7 @@
    &none     &kp Q       &kp W      &kp E       &kp R      &kp T        &kp Y     &kp U      &kp I       &none   &kp DOT     &kp BSPC
    &kp LCTRL &hm LCTRL A &hm LALT S &hm LSHFT D &hm LGUI F &kp G        &kp H     &hm RGUI N &hm RSHFT K &kp O      &kp L       &kp LA(N)
    &none     &kp Z       &kp X      &kp C       &kp V      &kp B        &kp J     &kp M      &kp P       &kp SEMI   &kp CAPS    &kp ESC
-                                    &kp LGUI    &mo 2      &kp SPACE    &sc &mo 1      &key_repeat
+                                    &kp LGUI    &mo 2      &sesc    &sc &mo 1      &key_repeat
                         >;
                 };
                 
