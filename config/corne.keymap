@@ -63,10 +63,10 @@
 // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
 //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
                         bindings = <
-   &none     &kp Q       &kp W      &kp E       &kp R      &kp T        &kp Y     &kp U      &kp I       &none   &kp DOT     &kp BSPC
-   &kp LCTRL &hm LCTRL A &hm LALT S &hm LSHFT D &hm LGUI F &kp G        &kp H     &hm RGUI N &hm RSHFT K &kp O      &kp L       &kp LA(N)
+   &none     &kp Q       &kp W      &kp E       &kp R      &kp T        &kp Y     &kp U      &kp I       &kp TAB   &kp DOT     &kp BSPC
+   &none &hm LCTRL A &hm LALT S &hm LSHFT D &hm LGUI F &kp G        &kp H     &hm RGUI N &hm RSHFT K &kp O      &kp L       &kp LA(N)
    &none     &kp Z       &kp X      &kp C       &kp V      &kp B        &kp J     &kp M      &kp P       &kp SEMI   &kp CAPS    &kp ESC
-                                    &kp LGUI    &mo 2      &kp SPACE    &sc &mo 1      &key_repeat
+                                    &kp LGUI    &mo 2      &kp SPACE    &sc &mo 1      &kp LCTRL
                         >;
                 };
                 
