@@ -53,7 +53,7 @@
           };
           combo_repeat {
             timeout-ms = <50>;
-            key-postions = <38 39>;
+            key-positions = <38 39>;
             layers = <0>;
             bindings = <&key_repeat>;
           };
