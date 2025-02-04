@@ -34,7 +34,7 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp LSHFT>, <&sk LCTRL>;
+            bindings = <&sk LSHFT>, <&sk LCTRL>;
           };
         };
         combos {
@@ -51,6 +51,12 @@
             layers = <0>;
             bindings = <&kp ESC>;
           };
+          combo_repeat {
+            timeout-ms = <50>;
+            key-postions = <38 39>;
+            layers = <0>;
+            bindings = <&key_repeat>;
+          };
         };
         keymap {
                 compatible = "zmk,keymap";
@@ -58,15 +64,15 @@
                 default_layer {
                         display-name = "Base";
 // -----------------------------------------------------------------------------------------
-// |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
-// | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
-// | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
-//                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
+// |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  | TAB |  P  | BKSP |
+// | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  N   |  K  |  O  |  ;  |  '   |
+// | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  J  |  M   |  ,  |  .  |  /  | ESC  |
+//                    | GUI | LWR | SPC |   | SHFT| RSE  | CTRL|
                         bindings = <
-   &none     &kp Q       &kp W      &kp E       &kp R      &kp T        &kp Y     &kp U      &kp I       &kp TAB   &kp DOT     &kp BSPC
-   &none &hm LCTRL A &hm LALT S &hm LSHFT D &hm LGUI F &kp G        &kp H     &hm RGUI N &hm RSHFT K &kp O      &kp L       &kp LA(N)
-   &none     &kp Z       &kp X      &kp C       &kp V      &kp B        &kp J     &kp M      &kp P       &kp SEMI   &kp CAPS    &kp ESC
-                                    &kp LGUI    &mo 2      &kp SPACE    &sc &mo 1      &sk LCTRL
+   &none &kp Q       &kp W      &kp E       &kp R      &kp T        &kp Y &kp U      &kp I       &kp TAB  &none &none
+   &none &hm LCTRL A &hm LALT S &hm LSHFT D &hm LGUI F &kp G        &kp H &hm RGUI N &hm RSHFT K &kp O    &kp L &none
+   &none &kp Z       &kp X      &kp C       &kp V      &kp B        &kp J &kp M      &kp P       &kp SEMI &none &none
+                                &kp LGUI    &mo 2      &kp SPACE    &sc   &mo 1      &sk LCTRL
                         >;
                 };
                 
@@ -82,9 +88,9 @@
    // &kp LSHFT &kp LALT &kp UNDER &kp LT    &kp GT    &kp TILDE    &kp GRAVE &kp PRCNT &kp QMARK &kp SEMI  &none   &none
    //                              &kp LGUI  &mo 3     &kp SPACE    &none     &none     &none
                         bindings = <
-   &kp ESC   &kp TILDE &kp AT    &kp PLUS  &kp CARET &none           &none    &kp DLLR  &kp EQUAL &kp COLON &none   &none
+   &kp ESC   &kp TILDE &kp AT    &kp PLUS  &kp CARET &none           &none    &kp DLLR  &kp EQUAL &kp LA(N) &none   &none
    &kp LCTRL &kp FSLH  &kp EXCL  &kp COMMA &kp DOT   &kp ASTRK       &kp HASH &kp DQT   &kp SQT   &kp PIPE  &kp RET &none
-   &kp LSHFT &kp BSLH  &kp UNDER &kp MINUS &kp AMPS  &none           &none    &kp PRCNT &kp QMARK &kp GRAVE &none   &none
+   &kp LSHFT &kp BSLH  &kp UNDER &kp MINUS &kp AMPS  &none           &kp CAPS &kp PRCNT &kp QMARK &kp GRAVE &none   &none
                                  &kp LGUI  &mo 3     &kp SPACE       &none    &none     &none
                         >;
                 };
@@ -101,10 +107,10 @@
    // &kp LC(LA(LGUI)) &kp TAB   &kp LBRC &kp LPAR &kp LBKT &none     &kp PLUS &kp RBKT &kp RPAR &kp RBRC  &none  &none
    //                                     &none    &none    &none     &kp TAB  &mo 3    &kp RALT
                         bindings = <
-   &kp ESC          &kp N0    &kp N1 &kp N2 &kp N3 &kp COMMA     &kp LEFT &kp DOWN &kp UP   &kp RIGHT &kp BSPC &none
-   &kp LS(LGUI)     &kp N0   &kp N4 &kp N5 &kp N6 &kp DOT       &kp LBRC &kp LPAR &kp RPAR &kp RBRC  &kp RET  &kp ESC
-   &kp LC(LA(LGUI)) &kp PLUS  &kp N7 &kp N8 &kp N9 &kp MINUS     &kp LT   &kp LBKT &kp RBKT &kp GT    &none    &none
-                                     &none  &none  &none         &kp TAB  &mo 3    &kp RALT
+   &none            &none    &kp N1 &kp N2 &kp N3 &kp COMMA     &kp LEFT  &kp DOWN &kp UP   &kp RIGHT &none   &none
+   &kp LS(LGUI)     &kp N0   &kp N4 &kp N5 &kp N6 &kp DOT       &kp LBRC  &kp LPAR &kp RPAR &kp RBRC  &kp RET &none
+   &kp LC(LA(LGUI)) &kp PLUS &kp N7 &kp N8 &kp N9 &kp MINUS     &kp LT    &kp LBKT &kp RBKT &kp GT    &none   &none
+                                    &none  &none  &none         &kp LCTRL &mo 3    &kp RALT
                         >;
                 };
 
