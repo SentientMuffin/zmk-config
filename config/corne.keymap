@@ -20,6 +20,10 @@
 #define WASDADDON 7
 */
 
+&sk {
+    quick-release;
+};
+
 / {
         behaviors {
           hm: homerow_mods {
@@ -34,7 +38,7 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&sk LSHFT>, <&sk LCTRL>;
+            bindings = <&kp LSHFT>, <&sk LCTRL>;
           };
         };
         combos {
@@ -50,12 +54,6 @@
             key-positions = <14 15>;
             layers = <0>;
             bindings = <&kp ESC>;
-          };
-          combo_repeat {
-            timeout-ms = <50>;
-            key-positions = <38 39>;
-            layers = <0>;
-            bindings = <&key_repeat>;
           };
         };
         keymap {
@@ -88,7 +86,7 @@
    // &kp LSHFT &kp LALT &kp UNDER &kp LT    &kp GT    &kp TILDE    &kp GRAVE &kp PRCNT &kp QMARK &kp SEMI  &none   &none
    //                              &kp LGUI  &mo 3     &kp SPACE    &none     &none     &none
                         bindings = <
-   &kp ESC   &kp TILDE &kp AT    &kp PLUS  &kp CARET &none           &none    &kp DLLR  &kp EQUAL &kp LA(N) &none   &none
+   &kp ESC   &kp TILDE &kp AT    &kp PLUS  &kp CARET &none           &none    &kp DLLR  &kp EQUAL &sk LCTRL &none   &none
    &kp LCTRL &kp FSLH  &kp EXCL  &kp COMMA &kp DOT   &kp ASTRK       &kp HASH &kp DQT   &kp SQT   &kp PIPE  &kp RET &none
    &kp LSHFT &kp BSLH  &kp UNDER &kp MINUS &kp AMPS  &none           &kp CAPS &kp PRCNT &kp QMARK &kp GRAVE &none   &none
                                  &kp LGUI  &mo 3     &kp SPACE       &none    &none     &none
@@ -107,9 +105,9 @@
    // &kp LC(LA(LGUI)) &kp TAB   &kp LBRC &kp LPAR &kp LBKT &none     &kp PLUS &kp RBKT &kp RPAR &kp RBRC  &none  &none
    //                                     &none    &none    &none     &kp TAB  &mo 3    &kp RALT
                         bindings = <
-   &none            &none    &kp N1 &kp N2 &kp N3 &kp COMMA     &kp LEFT  &kp DOWN &kp UP   &kp RIGHT &none   &none
-   &kp LS(LGUI)     &kp N0   &kp N4 &kp N5 &kp N6 &kp DOT       &kp LBRC  &kp LPAR &kp RPAR &kp RBRC  &kp RET &none
-   &kp LC(LA(LGUI)) &kp PLUS &kp N7 &kp N8 &kp N9 &kp MINUS     &kp LT    &kp LBKT &kp RBKT &kp GT    &none   &none
+   &none            &none    &kp N1 &kp N2 &kp N3 &kp COMMA     &kp LEFT  &kp DOWN &kp UP   &kp RIGHT &none     &none
+   &kp LS(LGUI)     &kp N0   &kp N4 &kp N5 &kp N6 &kp DOT       &kp LBRC  &kp LPAR &kp RPAR &kp RBRC  &kp LA(N) &none
+   &kp LC(LA(LGUI)) &kp PLUS &kp N7 &kp N8 &kp N9 &kp MINUS     &kp LT    &kp LBKT &kp RBKT &kp GT    &none     &none
                                     &none  &none  &none         &sk LCTRL &mo 3    &kp RALT
                         >;
                 };
@@ -126,9 +124,9 @@
    // &none &kp F9 &kp F10 &kp F11 &kp F12 &none   &kp C_MUTE &kp C_VOL_DN &kp C_VOL_UP &none     &none   &none
    //                      &none   &none   &none   &none      &none        &none
                         bindings = <
-   &kp F1 &kp F2  &kp F3 &kp F4   &kp F5    &kp F6        &kp F7     &kp F8       &kp F9       &kp F10   &kp F11 &kp F12
-   &none  &kp ESC &none  &kp LEFT &kp RIGHT &none         &kp LEFT   &kp DOWN     &kp UP       &kp RIGHT &kp RET &none
-   &to 4  &none   &none  &none    &none     &none         &kp C_MUTE &kp C_VOL_DN &kp C_VOL_UP &none     &none   &none
+   &kp F1 &kp F2 &kp F3 &kp F4   &kp F5    &kp F6        &kp F7     &kp F8       &kp F9       &kp F10   &kp F11 &kp F12
+   &none  &none  &none  &kp LEFT &kp RIGHT &none         &kp LEFT   &kp DOWN     &kp UP       &kp RIGHT &kp RET &none
+   &to 4  &none  &none  &none    &none     &none         &kp C_MUTE &kp C_VOL_DN &kp C_VOL_UP &none     &none   &none
                         &none    &none     &none         &none      &none        &none
                         >;
                 };
