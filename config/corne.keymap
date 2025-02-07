@@ -55,6 +55,12 @@
             layers = <0>;
             bindings = <&kp ESC>;
           };
+          combo_tab {
+            timeout-ms = <50>;
+            key-positions = <8 9>;
+            layers = <0>;
+            bindings = <&kp TAB>;
+          };
           combo_enter {
             timeout-ms = <50>;
             key-positions = <32 33>;
@@ -73,7 +79,7 @@
 // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  J  |  M   |  ,  |  .  |  /  | ESC  |
 //                    | GUI | LWR | SPC |   | SHFT| RSE  | CTRL|
                         bindings = <
-   &none &kp Q       &kp W      &kp E       &kp R      &kp T        &kp Y     &kp U      &kp I       &kp TAB  &none &none
+   &none &kp TILDE   &kp W      &kp E       &kp R      &kp T        &kp Y     &kp U      &kp I       &kp Q    &none &none
    &none &hm LCTRL A &hm LALT S &hm LSHFT D &hm LGUI F &kp G        &kp H     &hm RGUI N &hm RSHFT K &kp O    &kp L &none
    &none &kp Z       &kp X      &kp C       &kp V      &kp B        &kp J     &kp M      &kp P       &kp SEMI &none &none
                                 &kp LGUI    &mo 2      &kp SPACE    &kp LSHFT &mo 1      &sk LCTRL
