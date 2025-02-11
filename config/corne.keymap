@@ -49,6 +49,12 @@
             layers = <0>;
             bindings = <&kp BSPC>;
           };
+          combo_word_backspace {
+            timeout-ms = <50>;
+            key-positions = <19 20 21>;
+            layers = <0>;
+            bindings = <&kp LA(BSPC)>;
+          };
           combo_esc {
             timeout-ms = <50>;
             key-positions = <14 15>;
