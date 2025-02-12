@@ -40,12 +40,6 @@
             tapping-term-ms = <200>;
             bindings = <&kp LSHFT>, <&sk LCTRL>;
           };
-          cs: control_space {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&kp SPACE>, <&kp LCTRL>;
-          };
         };
         combos {
           compatible = "zmk,combos";
@@ -94,7 +88,7 @@
    &none &kp TILDE   &kp W      &kp E       &kp R      &kp T        &kp Y     &kp U      &kp I       &kp Q    &none &none
    &none &hm LCTRL A &hm LALT S &hm LSHFT D &hm LGUI F &kp G        &kp H     &hm RGUI N &hm RSHFT K &kp O    &kp L &none
    &none &kp Z       &kp X      &kp C       &kp V      &kp B        &kp J     &kp M      &kp P       &kp SEMI &none &none
-                                &kp LGUI    &mo 2      &cs          &kp LSHFT &mo 1      &sk LCTRL
+                                &kp LGUI    &mo 2      &kp SPACE    &kp LSHFT &mo 1      &sk LCTRL
                         >;
                 };
                 
