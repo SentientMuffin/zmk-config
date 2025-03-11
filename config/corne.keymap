@@ -85,9 +85,9 @@
 // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  J  |  M   |  ,  |  .  |  /  | ESC  |
 //                    | GUI | LWR | SPC |   | SHFT| RSE  | CTRL|
                         bindings = <
-   &none &kp TILDE   &kp W      &kp E       &kp R      &kp T        &kp Y     &kp U      &kp I       &kp Q    &none &none
-   &none &hm LCTRL A &hm LALT S &hm LSHFT D &hm LGUI F &kp G        &kp H     &hm RGUI N &hm RSHFT K &kp O    &kp L &none
-   &none &kp Z       &kp X      &kp C       &kp V      &kp B        &kp J     &kp M      &kp P       &kp SEMI &sk LCTRL &none
+   &none &kp TILDE   &kp W      &kp E       &kp R      &kp T        &kp Y     &kp U      &kp I       &kp Q     &none &none
+   &none &hm LCTRL A &hm LALT S &hm LSHFT D &hm LGUI F &kp G        &kp H     &hm RGUI N &hm RSHFT K &kp O     &kp L &none
+   &none &kp Z       &kp X      &kp C       &kp V      &kp B        &kp J     &kp M      &kp P       &sk LCTRL &none &none
                                 &kp LGUI    &mo 2      &kp SPACE    &kp LSHFT &mo 1      &sk LCTRL
                         >;
                 };
@@ -104,9 +104,9 @@
    // &kp LSHFT &kp LALT &kp UNDER &kp LT    &kp GT    &kp TILDE    &kp GRAVE &kp PRCNT &kp QMARK &kp SEMI  &none   &none
    //                              &kp LGUI  &mo 3     &kp SPACE    &none     &none     &none
                         bindings = <
-   &kp ESC   &kp TILDE &kp AT    &kp PLUS  &kp CARET &none           &none    &kp DLLR  &kp EQUAL &kp COLON &none     &none
-   &kp LCTRL &kp FSLH  &kp EXCL  &kp COMMA &kp DOT   &kp ASTRK       &kp HASH &kp DQT   &kp SQT   &kp PIPE  &sk LCTRL &none
-   &kp LSHFT &kp BSLH  &kp UNDER &kp MINUS &kp AMPS  &none           &kp CAPS &kp PRCNT &kp QMARK &kp GRAVE &none     &none
+   &kp ESC   &kp TILDE &kp AT    &kp PLUS  &kp CARET &none           &none    &kp DLLR  &kp EQUAL &kp COLON &none    &none
+   &kp LCTRL &kp FSLH  &kp EXCL  &kp COMMA &kp DOT   &kp ASTRK       &kp HASH &kp DQT   &kp SQT   &kp PIPE  &kp SEMI &none
+   &kp LSHFT &kp BSLH  &kp UNDER &kp MINUS &kp AMPS  &none           &kp CAPS &kp PRCNT &kp QMARK &kp GRAVE &none    &none
                                  &kp LGUI  &mo 3     &kp SPACE       &none    &none     &none
                         >;
                 };
