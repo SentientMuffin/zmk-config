@@ -105,7 +105,6 @@
    &none &kp Z       &kp X      &kp C       &kp D      &kp V        &kp K     &kp H      &kp Y       &sk LCTRL &none &none
                                 &kp LGUI    &mo 3      &kp SPACE    &kp LSHFT &mo 2      &none
                         >;
-                        >;
                 };
                 
                 symbs_layer {
