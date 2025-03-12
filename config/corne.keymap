@@ -34,11 +34,11 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
           };
-          sc: shift_control {
+          sml: shift_movelayer {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp LSHFT>, <&sk LCTRL>;
+            bindings = <&kp LSHFT>, <&mo 4>;
           };
         };
         combos {
@@ -46,31 +46,31 @@
           combo_backspace {
             timeout-ms = <50>;
             key-positions = <20 21>;
-            layers = <0>;
+            layers = <0 5>;
             bindings = <&kp BSPC>;
           };
           combo_word_backspace {
             timeout-ms = <50>;
             key-positions = <19 20 21>;
-            layers = <0>;
+            layers = <0 5>;
             bindings = <&kp LA(BSPC)>;
           };
           combo_esc {
             timeout-ms = <50>;
             key-positions = <14 15>;
-            layers = <0>;
+            layers = <0 5>;
             bindings = <&kp ESC>;
           };
           combo_tab {
             timeout-ms = <50>;
             key-positions = <8 9>;
-            layers = <0>;
+            layers = <0 5>;
             bindings = <&kp TAB>;
           };
           combo_enter {
             timeout-ms = <50>;
             key-positions = <32 33>;
-            layers = <0>;
+            layers = <0 5>;
             bindings = <&kp RET>;
           };
         };
@@ -88,7 +88,23 @@
    &none &kp TILDE   &kp W      &kp E       &kp R      &kp T        &kp Y     &kp U      &kp I       &kp Q     &none &none
    &none &hm LCTRL A &hm LALT S &hm LSHFT D &hm LGUI F &kp G        &kp H     &hm RGUI N &hm RSHFT K &kp O     &kp L &none
    &none &kp Z       &kp X      &kp C       &kp V      &kp B        &kp J     &kp M      &kp P       &sk LCTRL &none &none
-                                &kp LGUI    &mo 2      &kp SPACE    &kp LSHFT &mo 1      &sk LCTRL
+                                &kp LGUI    &mo 3      &kp SPACE    &kp LSHFT &mo 2      &sk LCTRL
+                        >;
+                };
+
+                colemak_layer {
+                        display-name = "CKYQ";
+// -----------------------------------------------------------------------------------------
+// |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
+// | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
+// | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
+//                    | GUI |     | SPC |   | ENT |     | ALT |
+                        bindings = <
+   &none &kp TILDE   &kp W      &kp F       &kp P      &kp B        &kp J     &kp L      &kp U       &kp Q     &none &none
+   &none &hm LCTRL A &hm LALT R &hm LSHFT S &hm LGUI T &kp G        &kp M     &hm RGUI N &hm RSHFT E &kp I     &kp O &none
+   &none &kp Z       &kp X      &kp C       &kp D      &kp V        &kp K     &kp H      &kp Y       &sk LCTRL &none &none
+                                &kp LGUI    &mo 3      &kp SPACE    &kp LSHFT &mo 2      &none
+                        >;
                         >;
                 };
                 
@@ -107,7 +123,7 @@
    &kp ESC   &kp TILDE &kp AT    &kp PLUS  &kp CARET &none           &none    &kp DLLR  &kp EQUAL &kp COLON &none    &none
    &kp LCTRL &kp FSLH  &kp EXCL  &kp COMMA &kp DOT   &kp ASTRK       &kp HASH &kp DQT   &kp SQT   &kp PIPE  &kp SEMI &none
    &kp LSHFT &kp BSLH  &kp UNDER &kp MINUS &kp AMPS  &none           &kp CAPS &kp PRCNT &kp QMARK &kp GRAVE &none    &none
-                                 &kp LGUI  &mo 3     &kp SPACE       &none    &none     &none
+                                 &kp LGUI  &mo 4     &kp SPACE       &none    &none     &none
                         >;
                 };
 
@@ -126,7 +142,7 @@
    &none            &none    &kp N1 &kp N2 &kp N3 &kp COMMA     &kp LEFT   &kp DOWN &kp UP   &kp RIGHT &none     &none
    &kp LS(LGUI)     &kp N0   &kp N4 &kp N5 &kp N6 &kp DOT       &kp LBRC   &kp LPAR &kp RPAR &kp RBRC  &kp LA(N) &none
    &kp LC(LA(LGUI)) &kp PLUS &kp N7 &kp N8 &kp N9 &kp MINUS     &kp LT     &kp LBKT &kp RBKT &kp GT    &none     &none
-                                    &none  &none  &none         &kp LC(W)  &mo 3    &kp RALT
+                                    &none  &none  &none         &kp LC(W)  &mo 4    &kp RALT
                         >;
                 };
 
@@ -144,8 +160,8 @@
                         bindings = <
    &kp F1 &kp F2 &kp F3 &kp F4   &kp F5    &kp F6        &kp F7     &kp F8       &kp F9       &kp F10   &kp F11 &kp F12
    &none  &none  &none  &kp LEFT &kp RIGHT &none         &kp LEFT   &kp DOWN     &kp UP       &kp RIGHT &kp RET &none
-   &to 4  &none  &none  &none    &none     &none         &kp C_MUTE &kp C_VOL_DN &kp C_VOL_UP &none     &none   &none
-                        &none    &none     &none         &none      &none        &none
+   &none  &to 5  &to 0  &none    &none     &none         &kp C_MUTE &kp C_VOL_DN &kp C_VOL_UP &none     &to 1   &none
+                        &none    &none     &none         &to 0      &none        &none
                         >;
                 };
 
