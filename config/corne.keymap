@@ -101,8 +101,8 @@
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
    &none &kp TILDE   &kp W      &kp F       &kp P      &kp B        &kp J     &kp L      &kp U       &kp Q     &none &none
-   &none &hm LCTRL A &hm LALT R &hm LSHFT S &hm LGUI T &kp G        &kp K     &hm RGUI N &hm RSHFT E &kp I     &kp O &none
-   &none &kp Z       &kp X      &kp C       &kp D      &kp V        &kp M     &kp H      &kp Y       &sk LCTRL &none &none
+   &none &hm LCTRL A &hm LALT R &hm LSHFT S &hm LGUI T &kp G        &kp M     &hm RGUI N &hm RSHFT E &kp I     &kp O &none
+   &none &kp Z       &kp X      &kp C       &kp D      &kp V        &kp K     &kp H      &kp Y       &sk LCTRL &none &none
                                 &kp LGUI    &mo 3      &kp SPACE    &sml      &mo 2      &none
                         >;
                 };
