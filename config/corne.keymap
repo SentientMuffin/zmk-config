@@ -46,7 +46,7 @@
             tapping-term-ms = <175>;
             quick-tap-ms = <0>;
             flavor = "tap-preferred";
-            bindings = <&kp>, <&mo>;
+            bindings = <&mo>, <&kp>;
           };
         };
         combos {
@@ -96,7 +96,7 @@
    &none &kp TILDE   &kp W      &kp E       &kp R      &kp T        &kp Y     &kp U      &kp I       &kp Q     &none &none
    &none &hm LCTRL A &hm LALT S &hm LSHFT D &hm LGUI F &kp G        &kp H     &hm RGUI N &hm RSHFT K &kp O     &kp L &none
    &none &kp Z       &kp X      &kp C       &kp V      &kp B        &kp J     &kp M      &kp P       &sk LCTRL &none &none
-                                &kp LGUI    &mo 3      &spml SPACE 4    &kp LSHFT      &mo 2      &sk LCTRL
+                                &kp LGUI    &mo 3      &spml 4 SPACE    &kp LSHFT      &mo 2      &sk LCTRL
                         >;
                 };
 
