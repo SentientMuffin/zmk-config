@@ -40,6 +40,12 @@
             tapping-term-ms = <200>;
             bindings = <&kp LSHFT>, <&to 4>;
           };
+          spml: space_movelayer {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <0>;
+            tapping-term-ms = <175>;
+            bindings = <&kp>, <&mo>;
+          };
         };
         combos {
           compatible = "zmk,combos";
@@ -88,7 +94,7 @@
    &none &kp TILDE   &kp W      &kp E       &kp R      &kp T        &kp Y     &kp U      &kp I       &kp Q     &none &none
    &none &hm LCTRL A &hm LALT S &hm LSHFT D &hm LGUI F &kp G        &kp H     &hm RGUI N &hm RSHFT K &kp O     &kp L &none
    &none &kp Z       &kp X      &kp C       &kp V      &kp B        &kp J     &kp M      &kp P       &sk LCTRL &none &none
-                                &kp LGUI    &mo 3      &kp SPACE    &sml      &mo 2      &sk LCTRL
+                                &kp LGUI    &mo 3      &spml SPACE 4    &kp LSHFT      &mo 2      &sk LCTRL
                         >;
                 };
 
