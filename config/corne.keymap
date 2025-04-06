@@ -66,6 +66,12 @@
       layers = <0 1>;
       bindings = <&kp TAB>;
     };
+    combo_left_tab {
+      timeout-ms = <50>;
+      key-positions = <2 3>;
+      layers = <0 1>;
+      bindings = <&kp TAB>;
+    };
     combo_enter {
       timeout-ms = <50>;
       key-positions = <32 33>;
