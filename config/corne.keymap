@@ -80,7 +80,7 @@
         &none &kp A &kp S &kp D &kp F &kp G        &kp H &kp N &kp K &kp O     &kp L    &none
         &none &kp Z &kp X &kp C &kp V &kp B        &kp J &kp M &kp P &sk LCTRL &none    &none
 
-               &kp LGUI &mo 3 &hltk 4 SPACE        &kp LSHFT &hltk 2 BSPC &none
+               &kp LGUI &mo 3 &hltk 4 SPACE        &kp LSHFT &mo 2 &none
       >;
     };
 
