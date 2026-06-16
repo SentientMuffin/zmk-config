@@ -120,9 +120,9 @@
     nav_layer {
       display-name = "Nav";
       bindings = <
-        &none &kp TILDE     &kp TAB      &kp LCTRL &kp LALT  &none                  &none    &none    &kp LA(SPACE) &none &none &none
-        &none &kp LA(SPACE) &kp LG(SPACE) &kp LSHFT &kp LGUI  &kp LC(LA(LGUI))      &kp LEFT &kp DOWN &kp UP        &kp RIGHT    &none &none
-        &none &kp LG(Z)     &kp LG(X)     &kp LG(C)    &kp LG(V) &none              &none    &none    &none         &none        &none &none
+        &none &kp TILDE     &kp TAB       &kp BSPC  &kp RET   &LCTRL              &none    &none    &kp LA(SPACE) &none      &none &none
+        &none &kp LA(SPACE) &kp LG(SPACE) &kp LSHFT &kp LGUI  &kp LC(LA(LGUI))    &kp LEFT &kp DOWN &kp UP        &kp RIGHT  &none &none
+        &none &kp LG(Z)     &kp LG(X)     &kp LG(C) &kp LG(V) &LALT               &none    &none    &none         &none      &none &none
 
         &none    &none    &none         &kp TAB     &none       &none
       >;
